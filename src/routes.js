@@ -3,16 +3,16 @@ import Profile from './views/Profile';
 import ChartJS from './views/Charts/ChartJS';
 import Flot from './views/Charts/Flot';
 import Inline from './views/Charts/Inline';
-import Error404 from './views/Error404';
+import NotFound from './views/NotFound';
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', exact: true, name: 'Dashboard', component: Dashboard },
   { path: '/profile', exact: true, name: 'Profile', component: Profile },
-  { path: '/chartjs', exact: true, name: 'ChartJS', component: ChartJS },
-  { path: '/flot', exact: true, name: 'Flot', component: Flot },
-  { path: '/inline', exact: true, name: 'Inline', component: Inline },
-  { path: '*', exact: true, name: 'Error404', component: Error404 },
+  { path: '/charts/chartjs', name: 'Charts', component: ChartJS },
+  { path: '/charts/flot', exact: true, name: 'Flot', component: Flot },
+  { path: '/charts/inline', exact: true, name: 'Inline', component: Inline },
+  { path: '/404', exact: true, name: 'NotFound', component: NotFound },
 ];
 
 export default routes;

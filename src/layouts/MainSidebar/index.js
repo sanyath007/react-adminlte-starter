@@ -7,7 +7,7 @@ const MainSidebar = () => {
       {/* Brand Logo */}
       <Link to="/" className="brand-link">
         <img
-          src="img/AdminLTELogo.png"
+          src="/img/AdminLTELogo.png"
           alt="AdminLTE Logo"
           className="brand-image img-circle elevation-3"
           style={{ opacity: '.8' }}
@@ -20,7 +20,7 @@ const MainSidebar = () => {
         {/* Sidebar user panel (optional) */}
         <div className="user-panel mt-3 pb-3 mb-3 d-flex">
           <div className="image">
-            <img src="img/user2-160x160.jpg" className="img-circle" alt="User Image" />
+            <img src="/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
           </div>
           <div className="info">
             <Link to="/profile">Alexander Pierce</Link>
@@ -57,19 +57,19 @@ const MainSidebar = () => {
               </a>
               <ul className="nav nav-treeview">
                 <li className="nav-item">
-                  <Link to="/chartjs" className="nav-link">
+                  <Link to="/charts/chartjs" className="nav-link">
                     <i className="far fa-circle nav-icon"></i>
                     <p>ChartJS</p>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/flot" className="nav-link">
+                  <Link to="/charts/flot" className="nav-link">
                     <i className="far fa-circle nav-icon"></i>
                     <p>Flot</p>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/inline" className="nav-link">
+                  <Link to="/charts/inline" className="nav-link">
                     <i className="far fa-circle nav-icon"></i>
                     <p>Inline</p>
                   </Link>
