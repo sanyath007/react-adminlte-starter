@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MainSidebar = () => {
   return (
     <aside className="main-sidebar sidebar-dark-primary elevation-4">
       {/* Brand Logo */}
-      <a href="index3.html" className="brand-link">
+      <Link to="/" className="brand-link">
         <img
           src="img/AdminLTELogo.png"
           alt="AdminLTE Logo"
@@ -12,7 +13,7 @@ const MainSidebar = () => {
           style={{ opacity: '.8' }}
         />
         <span className="brand-text font-weight-light">AdminLTE 3</span>
-      </a>
+      </Link>
 
       {/* Sidebar */}
       <section className="sidebar">
@@ -22,7 +23,7 @@ const MainSidebar = () => {
             <img src="img/user2-160x160.jpg" className="img-circle" alt="User Image" />
           </div>
           <div className="info">
-            <a href="#">Alexander Pierce</a>
+            <Link to="/profile">Alexander Pierce</Link>
           </div>
         </div>
 
@@ -30,22 +31,21 @@ const MainSidebar = () => {
         <nav className="mt-2">
           <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li className="nav-item has-treeview menu-open">
-              <a href="pages/widgets.html" className="nav-link">
+              <Link to="/dashboard" className="nav-link">
                 <i className="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard
-                  {/* <span className="right badge badge-danger">New</span> */}
                 </p>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="pages/widgets.html" className="nav-link">
+              <Link to="/profile" className="nav-link">
                 <i className="nav-icon fas fa-user"></i>
                 <p>
                   Profile
                   <span className="right badge badge-danger">New</span>
                 </p>
-              </a>
+              </Link>
             </li>
             <li className="nav-item has-treeview">
               <a href="#" className="nav-link">
@@ -57,22 +57,22 @@ const MainSidebar = () => {
               </a>
               <ul className="nav nav-treeview">
                 <li className="nav-item">
-                  <a href="pages/charts/chartjs.html" className="nav-link">
+                  <Link to="/chartjs" className="nav-link">
                     <i className="far fa-circle nav-icon"></i>
                     <p>ChartJS</p>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="pages/charts/flot.html" className="nav-link">
+                  <Link to="/flot" className="nav-link">
                     <i className="far fa-circle nav-icon"></i>
                     <p>Flot</p>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="pages/charts/inline.html" className="nav-link">
+                  <Link to="/inline" className="nav-link">
                     <i className="far fa-circle nav-icon"></i>
                     <p>Inline</p>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
