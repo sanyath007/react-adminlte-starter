@@ -11,6 +11,7 @@ const MainLayout = () => {
       <AppHeader />
 
       <AppSidebar />
+
       {/* Content Wrapper. Contains page content */}
       <div className="content-wrapper">
 
@@ -33,6 +34,7 @@ const MainLayout = () => {
 
         {/* Main content */}
         <section className="content">
+
           <Switch>
             {routes.map((route, idx) => {
               return route.component ? (
@@ -47,9 +49,13 @@ const MainLayout = () => {
             })}
             <Redirect from="/" to="/dashboard" />
           </Switch>
+
         </section>
+
       </div>
+
       <AppFooter />
+
     </div>
   );
 };
