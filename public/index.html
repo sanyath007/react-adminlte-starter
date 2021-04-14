@@ -69,11 +69,11 @@
     <script>
       $.widget.bridge('uibutton', $.ui.button)
 
-      if (window.location.href.endsWith('login')) {
+      if (window.location.href.endsWith('login') || window.location.href.endsWith('register')) {
         $('body')
           .removeClass('sidebar-mini')
           .removeClass('layout-fixed')
-          .addClass(' login-page');
+          .addClass('login-page');
       }
     </script>
     <!-- Bootstrap 4 -->
