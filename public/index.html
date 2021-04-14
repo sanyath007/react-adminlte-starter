@@ -47,7 +47,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <title>React App</title>
   </head>
-  <body hold-transition sidebar-mini layout-fixed>
+  <body class="hold-transition sidebar-mini layout-fixed">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -68,6 +68,13 @@
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
       $.widget.bridge('uibutton', $.ui.button)
+
+      if (window.location.href.endsWith('login')) {
+        $('body')
+          .removeClass('sidebar-mini')
+          .removeClass('layout-fixed')
+          .addClass(' login-page');
+      }
     </script>
     <!-- Bootstrap 4 -->
     <script src="%PUBLIC_URL%/adminlte3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
