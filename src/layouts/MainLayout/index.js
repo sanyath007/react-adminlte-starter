@@ -1,11 +1,15 @@
 import React from 'react'
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch, useLocation } from 'react-router-dom';
 import routes from '../../routes';
 import AppHeader from '../MainHeader';
 import AppSidebar from '../MainSidebar';
 import AppFooter from '../MainFooter';
 
 const MainLayout = () => {
+  /** Get the current route from location */
+  const location = useLocation();
+  const currentRoute = routes.find(rt => rt.path === location.pathname);
+
   return (
     <div className="wrapper">
       <AppHeader />
@@ -20,12 +24,12 @@ const MainLayout = () => {
           <div className="container-fluid">
             <div className="row mb-2">
               <div className="col-sm-6">
-                <h1 className="m-0 text-dark">Dashboard v3</h1>
+                <h1 className="m-0 text-dark">{currentRoute ? currentRoute?.name : 'Error404'}</h1>
               </div>
               <div className="col-sm-6">
                 <ol className="breadcrumb float-sm-right">
                   <li className="breadcrumb-item"><a href="#">Home</a></li>
-                  <li className="breadcrumb-item active">Dashboard v3</li>
+                  <li className="breadcrumb-item active">{currentRoute ? currentRoute?.name : 'Error404'}</li>
                 </ol>
               </div>
             </div>
