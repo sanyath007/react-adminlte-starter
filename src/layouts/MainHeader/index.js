@@ -39,7 +39,7 @@ const MainHeader = () => {
             <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
             <a href="#" className="dropdown-item">
                 <div className="media">
-                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" className="img-size-50 mr-3 img-circle" />
+                  <img src="img/user1-128x128.jpg" alt="User Avatar" className="img-size-50 mr-3 img-circle" />
                   <div className="media-body">
                       <h3 className="dropdown-item-title">
                       Brad Diesel
@@ -53,7 +53,7 @@ const MainHeader = () => {
             <div className="dropdown-divider"></div>
             <a href="#" className="dropdown-item">
                 <div className="media">
-                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" className="img-size-50 img-circle mr-3" />
+                  <img src="img/user8-128x128.jpg" alt="User Avatar" className="img-size-50 img-circle mr-3" />
                   <div className="media-body">
                     <h3 className="dropdown-item-title">
                       John Pierce
@@ -67,7 +67,7 @@ const MainHeader = () => {
             <div className="dropdown-divider"></div>
             <a href="#" className="dropdown-item">
                 <div className="media">
-                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" className="img-size-50 img-circle mr-3" />
+                  <img src="img/user3-128x128.jpg" alt="User Avatar" className="img-size-50 img-circle mr-3" />
                   <div className="media-body">
                         <h3 className="dropdown-item-title">
                           Nora Silvester
